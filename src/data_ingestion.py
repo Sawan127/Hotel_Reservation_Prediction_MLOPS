@@ -25,10 +25,11 @@ class DataIngestion:
     
     def download_csv_from_gcp(self):
         try:
-            credentials = service_account.Credentials.from_service_account_file(
+            '''credentials = service_account.Credentials.from_service_account_file(
             "D:\Projects\GCP\inner-lightning-457510-s9-6d659cee1d91.json"
             )
-            client = storage.Client(credentials=credentials)
+            client = storage.Client(credentials=credentials)'''
+            client = storage.Client()
             bucket = client.bucket(self.bucket_name)
             blob = bucket.blob(self.file_name)
 
