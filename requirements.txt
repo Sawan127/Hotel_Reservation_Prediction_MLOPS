@@ -6,3 +6,4 @@ pyyaml
 imbalanced-learn # for SMOTE 
 lightgbm
 mlflow
+flask
